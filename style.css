@@ -142,7 +142,7 @@ form > button {
 }
 
 /* Donate Plan Section */
-.donate-plan {
+.donate-plan, .contribute {
     width: 80%;
     max-width: 1130px;
     margin: 0 auto;
@@ -203,6 +203,52 @@ form > button {
     background-color: #faedcd;
 }
 
+/* Contribute Section */
+.contribute-sections {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+.contribute-sections:first-child { 
+    flex-direction: row-reverse;
+    margin-bottom: 50px;
+}
+.contribute-sections > img {
+    width: 45%;
+    max-width: 456px;
+    height: 477px;
+    border-radius: 5px;
+}
+.contribute-content > h2 {
+    max-width: 333px;
+    color: rgb(18, 18, 18);
+    font-family: Inter;
+    font-size: 4.5rem;
+    font-weight: 700;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.contribute-content > p {
+    color: rgb(112, 112, 112);
+    font-family: Poppins;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.contribute-content > button {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: left;
+    padding: 16px 12px 16px 12px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(255, 89, 89);
+    margin-top: 10px;
+}
 
 @media screen and (max-width: 576px) {
     * {
@@ -265,6 +311,7 @@ form > button {
     }
     .donate-plan {
         width: 80%;
+        margin-bottom: 90px;
     }
     .donate-plan > h2 {
         font-size: 3.4rem;
@@ -288,6 +335,30 @@ form > button {
     }
     .donate-plan-card > p {
         font-size: 1.4rem;
+    }
+    .contribute-sections {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    .contribute-sections:first-child {
+        flex-direction: column-reverse;
+    }
+    .contribute-sections > img {
+        width: 100%;
+        height: 300px;
+    }
+    .contribute-content > h2 {
+        font-size: 3.4rem;
+        margin-bottom: 15px;
+    }
+    .contribute-content > p {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+    }
+    .contribute-content > button {
+        padding: 1.2rem 1.8rem;
+        font-size: 1.6rem;
+        margin-top: 5px;
     }
 
 }
