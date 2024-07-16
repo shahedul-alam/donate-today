@@ -322,6 +322,31 @@ input[type="number"]::placeholder {
     cursor: pointer;
 }
 
+/* Footer Section */
+footer {
+    width: 100vw;
+    height: 180px;
+    background: rgb(11, 13, 23);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer > .footer-content > h2 {
+    color: rgb(255, 89, 89);
+    font-family: Poppins;
+    font-size: 3.6rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+}
+footer > .footer-content > p {
+    color: rgb(217, 219, 225);
+    font-family: Manrope;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: center;
+}
+
 
 
 
@@ -440,6 +465,7 @@ input[type="number"]::placeholder {
     }
     .update {
         width: 80%;
+        margin-bottom: 90px;
     }
     .update-content {
         margin-bottom: 30px;
@@ -469,6 +495,16 @@ input[type="number"]::placeholder {
         padding: 1.2rem 1.8rem;
         font-size: 1.6rem;
         border-radius: 5px;
+    }
+    footer {
+        height: 120px;
+    }
+    footer > .footer-content > h2 {
+        font-size: 3.4rem;
+        margin-bottom: 10px;
+    }
+    footer > .footer-content > p {
+        font-size: 1.2rem;
     }
 
 }
