@@ -129,7 +129,7 @@ input[type="number"]::placeholder {
     font-weight: 400;
     text-align: center;
 }
-form > button {
+.donate > form > button {
     color: rgb(255, 255, 255);
     font-family: Inter;
     font-size: 2rem;
@@ -139,6 +139,7 @@ form > button {
     border-radius: 0.5rem;
     background: rgb(255, 89, 89);
     align-self: center;
+    cursor: pointer;
 }
 
 /* Donate Plan Section */
@@ -248,7 +249,81 @@ form > button {
     border-radius: 5px;
     background: rgb(255, 89, 89);
     margin-top: 10px;
+    cursor: pointer;
 }
+
+/* Updates Section */
+.update {
+    width: 60%;
+    max-width: 810px;
+    margin: 0 auto;
+    margin-bottom: 130px;
+}
+.update-content {
+    width: 90%;
+    max-width: 690px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.update-content > h2 {
+    color: rgb(18, 18, 18);
+    font-family: Inter;
+    font-size: 4.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.update-content > p {
+    color: rgb(112, 112, 112);
+    font-family: Poppins;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: center;
+}
+.form-container {
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 244, 214);
+}
+.form-container > form {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0;
+}
+.form-container > form > input {
+    width: 50%;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    background: rgb(217, 217, 217);
+    padding-left: 20px;
+}
+.form-container > form > input::placeholder {
+    color: rgb(170, 159, 159);
+    font-family: Inter;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: left;
+}
+.form-container > form > button {
+    width: 20%;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    background: rgb(255, 89, 89);
+    cursor: pointer;
+}
+
+
+
 
 @media screen and (max-width: 576px) {
     * {
@@ -281,10 +356,12 @@ form > button {
     }
     .donate > h2 {
         font-size: 3.4rem;
+        margin-bottom: 10px;
     }
     .donate > p {
         width: 80%;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
+        margin-bottom: 30px;
     }
     .amount-cards {
         flex-wrap: wrap;
@@ -309,17 +386,17 @@ form > button {
         padding: 1.2rem 1.8rem;
         font-size: 1.6rem;
     }
-    .donate-plan {
+    .donate-plan{
         width: 80%;
         margin-bottom: 90px;
     }
-    .donate-plan > h2 {
+    .donate-plan > h2, .update-content > h2 {
         font-size: 3.4rem;
         margin-bottom: 10px;
     }
-    .donate-plan > p {
+    .donate-plan > p, .update-content > p {
         width: 90%;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         margin-bottom: 30px;
     }
     .donate-plan-cards {
@@ -339,6 +416,7 @@ form > button {
     .contribute-sections {
         flex-direction: column-reverse;
         gap: 30px;
+        margin-bottom: 90px;
     }
     .contribute-sections:first-child {
         flex-direction: column-reverse;
@@ -352,13 +430,45 @@ form > button {
         margin-bottom: 15px;
     }
     .contribute-content > p {
-        font-size: 1.4rem;
-        margin-bottom: 15px;
+        font-size: 1.6rem;
+        margin-bottom: 10px;
     }
     .contribute-content > button {
         padding: 1.2rem 1.8rem;
         font-size: 1.6rem;
-        margin-top: 5px;
+        margin-top: 10px;
+    }
+    .update {
+        width: 80%;
+    }
+    .update-content {
+        margin-bottom: 30px;
+    }
+    .update-content > p {
+        width: 100%;
+        font-size: 1.6rem;
+        margin: 0 auto;
+    }
+    .form-container {
+        min-height: 150px;
+        border-radius: 5px;
+    }
+    .form-container > form {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .form-container > form > input {
+        width: 80%;
+        border-radius: 5px;
+        padding: 14px 0 14px;
+        padding-left: 17px;
+    }
+    .form-container > form > button {
+        width: max-content;
+        padding: 1.2rem 1.8rem;
+        font-size: 1.6rem;
+        border-radius: 5px;
     }
 
 }
